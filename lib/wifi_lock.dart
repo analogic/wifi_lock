@@ -59,7 +59,7 @@ class WifiLock {
 
   factory WifiLock(int type) {
     if (_instance == null) {
-      new WifiLock.private(type);
+      _instance = new WifiLock.private(type);
     }
     return _instance;
   }
