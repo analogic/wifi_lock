@@ -1,0 +1,17 @@
+name: wifi_lock
+description: Flutter plugin for accessing android's WifiLock
+version: 0.0.2
+author: Stanislav Humplík <sh@analogic.cz>
+homepage: https://github.com/analogic/wifi_lock
+
+environment:
+  sdk: ">=2.0.0-dev.68.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+flutter:
+  plugin:
+    androidPackage: cz.analogic.wifilock
+    pluginClass: WifiLockPlugin
