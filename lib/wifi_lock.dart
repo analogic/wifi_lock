@@ -59,13 +59,13 @@ class WifiLock {
 
   factory WifiLock(int type) {
     if (_instance == null) {
-      _instance = new WifiLock.private(type);
+      _instance = new WifiLock._private(type);
     }
     return _instance;
   }
 
   final int type;
-  WifiLock.private(this.type);
+  WifiLock._private(this.type);
 
   /// Locks the Wi-Fi radio on until release() is called.
   Future<void> acquire() async {
